@@ -1,0 +1,241 @@
+.flexbox-container {
+  display: flex;
+  /* flex-shrink: initial; */
+  outline: 0;
+}
+
+.mobile-logo {
+  display: none;
+}
+.input-container {
+  display: flex;
+  border: 1px solid hsla(0, 36%, 70%, 0.466);
+  border-radius: 2.5rem;
+  width: 100%;
+  min-height: 2.7rem;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-top: 5px; */
+  padding-left: 6px;
+  padding-right: 0;
+  color: hsl(0, 36%, 70%);
+  margin-top: 3rem;
+  border-right: none;
+}
+
+.input {
+  /* min-width: 70%; */
+  border: none;
+  flex-grow: 3;
+  outline: 0;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.try {
+  color: white;
+  /* background: hsla(0, 93%, 68%, 0.74); */
+  min-height: 2.7rem;
+  width: 20%;
+  border: 0;
+  border-radius: 2.5rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.try:focus {
+  outline: 0;
+}
+
+.try:active {
+  background-image: linear-gradient(135deg, hsl(0, 55%, 87%), hsl(0, 78%, 85%));
+  /* opacity: 0.9; */
+  box-shadow: 2px 5px 5px 5px hsla(0, 68%, 88%, 0.678);
+}
+
+.Mone {
+  padding: 0 13rem 0 8rem;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  /* height: 100%; */
+}
+
+#logo {
+  margin: 5rem 0 7rem 0;
+}
+
+.big {
+  letter-spacing: 12px;
+  line-height: 4rem;
+}
+
+#We {
+  color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.error {
+  display: none;
+  padding: 2px;
+}
+
+#coming {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.pg {
+  color: hsl(0, 36%, 70%);
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.smallPix {
+  display: none;
+}
+
+#msg {
+  color: hsl(0, 74%, 74%);
+  padding-left: 1.3rem;
+  padding-top: 0.5rem;
+  display: none;
+}
+
+#email {
+  /* background-image: url("images/icon-error.svg"); */
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-left: 15px;
+  color: hsl(0, 36%, 70%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-logo {
+    display: block;
+    padding: 3rem;
+  }
+
+  .Mone {
+    padding: 0;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    /* height: 100%; */
+  }
+
+  .big {
+    letter-spacing: 0.5rem;
+    line-height: 2.3rem;
+    text-align: center;
+    padding-top: 4rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  #coming {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #We {
+    color: hsl(0, 36%, 70%);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .pg {
+    color: hsl(0, 36%, 70%);
+    font-size: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding: 0 3rem 0 3rem;
+  }
+
+  .flexbox-container {
+    display: flex;
+    flex-direction: column-reverse;
+    outline: 0;
+    /* align-content: center; */
+    /* justify-content: center; */
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .try {
+    color: white;
+    /* background: hsla(0, 93%, 68%, 0.74); */
+    min-height: 2.7rem;
+    width: 20%;
+    border: 0;
+    border-radius: 2.5rem;
+    background-image: linear-gradient(
+      135deg,
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+  }
+
+  .try:focus {
+    outline: 0;
+  }
+
+  .try:active {
+    background-image: linear-gradient(
+      135deg,
+      hsl(0, 55%, 87%),
+      hsl(0, 78%, 85%)
+    );
+    /* opacity: 0.9; */
+    box-shadow: 2px 5px 5px 5px hsla(0, 68%, 88%, 0.678);
+  }
+  .pix {
+    display: none;
+  }
+  .smallPix {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .input-container {
+    display: flex;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 2.5rem;
+    /* width: 80%; */
+    min-height: 2.7rem;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* padding-top: 5px; */
+    /* padding-left: 6px; */
+    /* padding-right: 0; */
+    color: hsl(0, 36%, 70%);
+    margin: 2rem 0 0 0;
+    border-right: none;
+  }
+
+  .full-input {
+    margin-bottom: 3rem;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
